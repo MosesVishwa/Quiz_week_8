@@ -11,11 +11,13 @@ years = []
 co2 = []
 temp = []
 
+# put into lists
 for r in results:
     years.append(r[0])
     co2.append(r[1])
     temp.append(r[2])
 
+# Close database and cursor connection
 cursor.close()
 connection.close()
 
